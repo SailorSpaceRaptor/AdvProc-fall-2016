@@ -13,14 +13,6 @@ main:
 	la	$a1, inputString	# maximum number of character
 	li	$v0, 8	# The system call code to read a string input
 	syscall
-#	# Print "You typed: " to console
-#	la	$a0, display	
-#	li	$v0, 4
-#	syscall
-	# Print the entered string to console
-#	la	$a0, inputString
-#	li	$v0, 4
-#	syscall
 strcopy:
     addi $sp, $sp, -4 #adjust stack for 1 item
     sw $s0, 0($sp) #save $s0
